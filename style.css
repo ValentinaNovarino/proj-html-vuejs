@@ -9,6 +9,7 @@ h2 {
     font-weight: bold;
     color: #fefefe;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .container {
@@ -16,9 +17,19 @@ h2 {
     margin: auto;
 }
 
+.container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .container-small {
     max-width: 600px;
     margin: auto;
+}
+
+.container-small p {
+    color: #737376;
 }
 
 .row {
@@ -122,6 +133,61 @@ button.secondary {
     margin-top: 40px;
 }
 
-.introduction p {
-    color: #737376;
+/****** NEWS ******/
+.news {
+    padding: 50px 0;
+    background-color: #272b34;
+}
+
+/****** NEWS BOX ******/
+.container-left {
+    float: left;
+    width: 60%;
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: red;
+}
+
+.box-left-top {
+    width: 100%;
+    background-color: orange;
+    height: 200px;
+}
+
+.horizontal-image {
+    width: 100%;
+    height: 60%;
+    /* background-image: url(images/blog_music_techo-400x200.jpg);
+    background-size: cover;
+    background-position: 10px; */
+    background-color: green;
+}
+
+.box-left-center {
+    width: 100%;
+    height: 400px;
+}
+
+.vertical-box-left, .vertical-box-right {
+    float: left;
+    height: 100%;
+    width: calc(50% - 5px);
+    background-color: lightblue;
+}
+
+.vertical-box-left {
+    margin-right: 5px;
+}
+
+.vertical-box-right {
+    margin-left: 5px;
+}
+
+.container-right {
+    float: left;
+    width: calc(100% - 60% - 10px);
+    margin-left: 5px;
+    padding: 0 5px;
+    background-color: blue;
+    height: 300px;
 }
