@@ -4,10 +4,38 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container-small {
+    max-width: 600px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 200px;
+    border-top-color: #7780a4;
+}
+
+/****** HEADER ******/
 .container-home {
     background-image: url(images/home_slider.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     padding-bottom: 200px;
 }
 
@@ -24,6 +52,10 @@ header {
     align-items: center;
 }
 
+.logo-header {
+    max-width: 200px;
+}
+
 .menu {
     height: 100%;
     flex-grow: 1;
@@ -33,9 +65,8 @@ header {
     color: #fefefe;
 }
 
-.container {
-    max-width: 1170px;
-    margin: auto;
+.menu i {
+    font-size: 20px;
 }
 
 .untold-story {
@@ -74,10 +105,23 @@ button.secondary {
     background-color: transparent;
 }
 
-.menu i {
-    font-size: 20px;
+/****** INTRODUCTION ******/
+.colored-row {
+    width: 300px;
+    height: 10px;
+    margin: auto;
+    background-color: #eb4b54;
 }
 
-.logo-header {
-    max-width: 200px;
+.introduction {
+    padding-bottom: 50px;
+    background-color: #292d39;
+}
+
+.introduction h2 {
+    margin-top: 40px;
+}
+
+.introduction p {
+    color: #737376;
 }
