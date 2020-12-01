@@ -312,3 +312,40 @@ a.live {
     color: #eb4b54;
     letter-spacing: 2px;
 }
+
+/****** FOOTER ******/
+.footer-menu {
+    display: flex;
+    background-color: #323844;
+    padding: 70px 40px;
+}
+
+.footer-copyright {
+    padding: 30px 40px;
+    background-color: #272b34;
+}
+
+.menu-footer {
+    flex-grow: 1;
+    background-color: yellow;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    color: #737376;
+}
+
+.copyright {
+    float: left;
+    width: 90%;
+}
+
+.social-icon {
+    float: left;
+    width: 10%;
+}
+
+.social-icon a {
+    padding: 0 5px;
+    color: #737376;
+}
