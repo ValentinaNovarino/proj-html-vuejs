@@ -146,6 +146,10 @@ button.secondary {
     background-color: #272b34;
 }
 
+.wrapper p {
+    margin-bottom: 50px;
+}
+
 /****** NEWS BOX ******/
 .box-left-top, .box-left-bottom {
     height: 180px;
@@ -231,4 +235,19 @@ button.secondary {
 
 .image-text {
     background-color: #323844;
+}
+
+/****** LINK-BUTTON ******/
+.button-link {
+    height: 160px;
+    background-color: #eb4b54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.link {
+    padding: 70px 510px;
+    color: #fefefe;
+    text-decoration: none;
 }
