@@ -12,9 +12,16 @@ h2 {
     margin-top: 0;
 }
 
+h3 {
+    font-size: 16px;
+    color: #ea4a56;
+    margin: 0;
+}
+
 .container {
-    max-width: 1170px;
+    max-width: 900px;
     margin: auto;
+    padding: 0;
 }
 
 .container::after {
@@ -126,7 +133,7 @@ button.secondary {
 
 .introduction {
     padding-bottom: 50px;
-    background-color: #292d39;
+    background-color: #323844;
 }
 
 .introduction h2 {
@@ -134,60 +141,94 @@ button.secondary {
 }
 
 /****** NEWS ******/
-.news {
+.wrapper {
     padding: 50px 0;
     background-color: #272b34;
 }
 
 /****** NEWS BOX ******/
-.container-left {
-    float: left;
-    width: 60%;
-    padding: 0 5px;
-    margin-right: 5px;
-    background-color: red;
+.box-left-top, .box-left-bottom {
+    height: 180px;
 }
 
 .box-left-top {
-    width: 100%;
-    background-color: orange;
-    height: 200px;
+    margin-bottom: 15px;
+}
+
+.box-left-bottom {
+    margin-top: 15px;
+}
+
+.box-left-center.left, .box-left-center.right {
+    height: 360px;
+    margin: 15px 0;
+}
+
+.box-right-top, .box-right-bottom {
+    height: 360px;
+}
+
+.box-right-top {
+    margin-bottom: 30px;
+}
+
+.box-right-bottom {
+    margin-top: 30px;
 }
 
 .horizontal-image {
-    width: 100%;
     height: 60%;
-    /* background-image: url(images/blog_music_techo-400x200.jpg);
-    background-size: cover;
-    background-position: 10px; */
-    background-color: green;
-}
-
-.box-left-center {
     width: 100%;
-    height: 400px;
 }
 
-.vertical-box-left, .vertical-box-right {
-    float: left;
-    height: 100%;
-    width: calc(50% - 5px);
-    background-color: lightblue;
+.box-left-top .image-text, .box-left-bottom .image-text {
+    height: 40%;
+    padding: 10px;
 }
 
-.vertical-box-left {
-    margin-right: 5px;
+.vertical-image {
+    height: 70%;
 }
 
-.vertical-box-right {
-    margin-left: 5px;
+.box-left-center .image-text, .box-right-top .image-text, .box-right-bottom .image-text {
+    height: 30%;
+    padding: 10px;
 }
 
-.container-right {
-    float: left;
-    width: calc(100% - 60% - 10px);
-    margin-left: 5px;
-    padding: 0 5px;
-    background-color: blue;
-    height: 300px;
+.horizontal-image.left-top {
+    background-image: url(images/blog_music_techo-400x200.jpg);
+    background-size: cover;
+}
+
+.vertical-image.left {
+    background-image: url(images/blog-post3-200x300.jpg);
+    background-size: cover;
+}
+
+.vertical-image.right {
+    background-image: url(images/blog-post4-200x300.jpg);
+    background-size: cover;
+}
+
+.horizontal-image.left-bottom {
+    background-image: url(images/blog_flavor_rock-400x200.jpg);
+    background-size: cover;
+}
+
+.vertical-image.right-top {
+    background-image: url(images/blog-post1-200x300.jpg);
+    background-size: cover;
+}
+
+.vertical-image.right-bottom {
+    background-image: url(images/blog-post2-200x300.jpg);
+    background-size: cover;
+}
+
+.image-text p {
+    color: #737376;
+}
+
+.image-text {
+    background-color: #323844;
 }
