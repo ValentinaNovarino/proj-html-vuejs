@@ -8,7 +8,7 @@
 font-family: 'Montserrat', sans-serif; */
 
 h2 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: #fefefe;
     margin-bottom: 0;
@@ -19,6 +19,10 @@ h3 {
     font-size: 16px;
     color: #ea4a56;
     margin: 0;
+}
+
+p {
+    font-family: 'Merriweather', serif;
 }
 
 .container {
@@ -48,7 +52,7 @@ h3 {
 }
 
 hr {
-    width: 200px;
+    width: 300px;
     border-top-color: #7780a4;
 }
 
@@ -104,7 +108,6 @@ header {
 }
 
 .untold-story p {
-    font-family: 'Merriweather', serif;
     margin-bottom: 40px;
     font-size: 24px;
     font-style: italic;
@@ -131,24 +134,24 @@ button.secondary {
 
 /****** INTRODUCTION ******/
 .colored-row {
-    width: 300px;
-    height: 10px;
+    width: 400px;
+    height: 15px;
     margin: auto;
     background-color: #eb4b54;
 }
 
 .introduction {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: #323844;
 }
 
 .introduction h2 {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 /****** NEWS ******/
 .wrapper {
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #272b34;
 }
 
@@ -253,21 +256,25 @@ button.secondary {
 }
 
 a.link {
-    padding: 70px 510px;
+    font-size: 16px;
+    padding: 70px 480px;
     color: #fefefe;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 /****** QUOTES ******/
 .quotes {
     background-image: url(images/home-testimonial-parallax.jpg);
     background-size: cover;
-    padding: 200px 0;
+    padding: 150px 0;
 }
 
 p.text-quotes {
+    font-size: 20px;
     color: #fefefe;
     font-style: italic;
+    line-height: 35px;
 }
 
 .play {
