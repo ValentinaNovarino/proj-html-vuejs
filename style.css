@@ -283,3 +283,32 @@ p.text-quotes {
     align-items: center;
     margin-top: 50px;
 }
+
+/****** LIVES ******/
+.lives {
+    background-color: #272b34;
+    padding: 100px 0;
+}
+
+.lives p {
+    margin-bottom: 40px;
+}
+
+.live-dates {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 25px;
+    background-color: #323844;
+}
+
+.live-dates span i {
+    color: #fefefe;
+    margin-right: 25px;
+}
+
+a.live {
+    font-size: 16px;
+    text-decoration: none;
+    color: #eb4b54;
+    letter-spacing: 2px;
+}
