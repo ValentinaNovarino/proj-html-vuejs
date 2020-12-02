@@ -56,6 +56,15 @@ hr {
     border-top-color: #7780a4;
 }
 
+button.primary:hover, button.secondary:hover, a.button-link:hover {
+    background-color: #fefefe;
+    color: #272b34;
+}
+
+button.primary:hover {
+    border: 1px solid #fefefe;
+}
+
 /****** HEADER ******/
 .container-home {
     background-image: url(images/home_slider.jpg);
@@ -130,10 +139,6 @@ button.secondary {
     border-radius: 2px;
     color: #fefefe;
     background-color: transparent;
-}
-
-button.secondary:hover {
-    background-color: #fefefe;
 }
 
 /****** INTRODUCTION ******/
@@ -251,19 +256,21 @@ button.secondary:hover {
 }
 
 /****** LINK-BUTTON ******/
-.button-link {
-    height: 160px;
+a.button-link {
+    padding: 70px;
     background-color: #eb4b54;
+    color: #fefefe;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-a.link {
+
+
+span.link {
     font-size: 16px;
-    padding: 70px 480px;
-    color: #fefefe;
-    text-decoration: none;
     letter-spacing: 2px;
 }
 
@@ -271,6 +278,7 @@ a.link {
 .quotes {
     background-image: url(images/home-testimonial-parallax.jpg);
     background-size: cover;
+    background-position: center;
     padding: 150px 0;
 }
 
@@ -286,6 +294,10 @@ p.text-quotes {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.play img {
+    cursor: pointer;
 }
 
 /****** LIVES ******/
