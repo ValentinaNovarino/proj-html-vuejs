@@ -12,12 +12,12 @@
     </head>
     <body>
         <div id="root">
-            <div class="container-home" v-if="!showMenu">
+            <div class="container-home" v-if="showMenu == false">
                 <header>
                     <div class="logo">
-                        <img class="logo-header" src="images/avada-music-logo-retina.png" alt="">
+                        <img src="images/avada-music-logo.png" alt="">
                     </div>
-                    <div class="hamburger-menu" @click="showMenu = !showMenu">
+                    <div class="hamburger-menu" @click="showDropdownMenu()">
                         <i class="fas fa-bars"></i>
                     </div>
                 </header>
@@ -33,8 +33,13 @@
                 </div>
             </div>
             <div class="menu" v-else>
-                <div class="close" @click="showMenu = false">
-                    <i class="fas fa-times"></i>
+                <div class="header-menu">
+                    <div class="logo">
+                        <img src="images/avada-music-logo.png" alt="">
+                    </div>
+                    <div class="close" @click="closeDropdownMenu()">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
                 <div class="menu-items text-center">
                     <ul>

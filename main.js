@@ -10,10 +10,15 @@ var app = new Vue (
                 'Albums',
                 'Fans'
             ],
-            showMenu: false
+            showMenu: false,
         },
         methods: {
-
+            showDropdownMenu() {
+                this.showMenu = true;
+            },
+            closeDropdownMenu() {
+                this.showMenu = false;
+            }
         }
     }
 );
