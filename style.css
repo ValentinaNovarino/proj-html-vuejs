@@ -82,7 +82,7 @@ header {
     width: 300px;
 }
 
-.menu {
+.hamburger-menu {
     height: 100%;
     flex-grow: 1;
     display: flex;
@@ -91,7 +91,7 @@ header {
     color: #fefefe;
 }
 
-.menu i {
+.hamburger-menu i {
     font-size: 30px;
 }
 
@@ -132,6 +132,10 @@ button.secondary {
     background-color: transparent;
 }
 
+button.secondary:hover {
+    background-color: #fefefe;
+}
+
 /****** INTRODUCTION ******/
 .colored-row {
     width: 400px;
@@ -149,17 +153,17 @@ button.secondary {
     margin-top: 60px;
 }
 
-/****** NEWS ******/
-.wrapper {
+/****** BLOG ******/
+.blog {
     padding: 100px 0;
     background-color: #272b34;
 }
 
-.wrapper p {
+.blog p {
     margin-bottom: 50px;
 }
 
-/****** NEWS BOX ******/
+/****** BLOG BOX ******/
 .box-left-top, .box-left-bottom {
     height: 180px;
 }
@@ -178,15 +182,15 @@ button.secondary {
 }
 
 .box-right-top, .box-right-bottom {
-    height: 360px;
+    height: 375px;
 }
 
 .box-right-top {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .box-right-bottom {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .horizontal-image {
@@ -327,7 +331,24 @@ a.live {
 
 .menu-footer {
     flex-grow: 1;
-    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-footer li {
+    display: inline-block;
+}
+
+.menu-footer a {
+    font-family: 'Merriweather', serif;
+    padding: 10px 15px;
+    color: #737376;
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    color: #fefefe;
 }
 
 .footer-copyright p {

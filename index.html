@@ -17,15 +17,20 @@
                     <div class="logo">
                         <img class="logo-header" src="images/avada-music-logo-retina.png" alt="">
                     </div>
-                    <div class="menu">
+                    <div class="hamburger-menu">
                         <i class="fas fa-bars"></i>
                     </div>
+                    <!--<div class="menu">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div> -->
                 </header>
                 <div class="untold-story text-center">
                     <h1 class="font-weight-bold">
                         Untold Stories
                     </h1>
-                    <p class="font-italic">
+                    <p>
                         There is an untold story behind every favorite song.
                     </p>
                     <button class="primary text-uppercase" type="button" name="button">latest album</button>
@@ -45,7 +50,7 @@
                 </div>
             </div>
             <main>
-                <div class="wrapper">
+                <div class="blog">
                     <div class="container-small text-center">
                         <h2>Latest Band News</h2>
                         <div class="row">
@@ -184,7 +189,11 @@
                         <img src="images/logo_footer.png" alt="">
                     </div>
                     <div class="menu-footer">
-
+                        <ul>
+                            <li v-for="item in menuItems">
+                                <a href="#">{{ item }}</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer-copyright">
