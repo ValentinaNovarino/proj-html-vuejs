@@ -25,20 +25,8 @@ p {
     font-family: 'Merriweather', serif;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 0;
-}
-
-.container::after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
 .container-small {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -73,27 +61,18 @@ button.primary:hover {
     padding-bottom: 200px;
 }
 
-header {
-    height: 90px;
-    padding: 10px 40px;
-    display: flex;
+header, .header-menu {
+    height: 131px;
+    padding: 28px 40px;
 }
 
-.logo {
+.logo, .hamburger-menu {
+    float: left;
     height: 100%;
-    width: 30%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-header {
-    height: 100%;
-    width: 300px;
+    width: 50%;
 }
 
 .hamburger-menu {
-    height: 100%;
-    flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -109,20 +88,28 @@ header {
     flex-direction: column;
     height: 927px;
     width: 100%;
-    padding: 40px;
     background-color: #ea4a56;
-    color: #fefefe;
+    position: fixed;
+    z-index: 10;
 }
 
 .close {
-    width: 100%;
+    float: left;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.close:hover {
+    opacity: 1;
 }
 
 .close i {
     color: #fefefe;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu-items {
@@ -132,6 +119,8 @@ header {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-size: 35px;
+    color: #fefefe;
+    opacity: 0.5;
 }
 
 .menu-items ul {
@@ -140,8 +129,12 @@ header {
 
 .menu-items li {
     padding: 20px 0;
+    cursor: pointer;
 }
 
+.fade, {
+  transition: opacity 0.5s;
+}
 
 .untold-story {
     color: #fefefe;
@@ -149,7 +142,7 @@ header {
 
 .untold-story h1 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 150px;
+    margin-top: 70px;
     margin-bottom: 25px;
     font-size: 150px;
     font-weight: bold;
@@ -209,7 +202,7 @@ button.secondary {
 
 /****** BLOG BOX ******/
 .box-left-top, .box-left-bottom {
-    height: 180px;
+    height: 300px;
 }
 
 .box-left-top {
@@ -221,12 +214,12 @@ button.secondary {
 }
 
 .box-left-center.left, .box-left-center.right {
-    height: 360px;
+    height: 600px;
     margin: 15px 0;
 }
 
 .box-right-top, .box-right-bottom {
-    height: 375px;
+    height: 615px;
 }
 
 .box-right-top {
@@ -257,32 +250,33 @@ button.secondary {
 }
 
 .horizontal-image.left-top {
-    background-image: url(images/blog_music_techo-400x200.jpg);
+    background-image: url(images/blog_music_techo-800x400.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .vertical-image.left {
-    background-image: url(images/blog-post3-200x300.jpg);
+    background-image: url(images/blog-post3-400x600.jpg);
     background-size: cover;
 }
 
 .vertical-image.right {
-    background-image: url(images/blog-post4-200x300.jpg);
+    background-image: url(images/blog-post4-400x600.jpg);
     background-size: cover;
 }
 
 .horizontal-image.left-bottom {
-    background-image: url(images/blog_flavor_rock-400x200.jpg);
+    background-image: url(images/blog_flavor_rock-800x400.jpg);
     background-size: cover;
 }
 
 .vertical-image.right-top {
-    background-image: url(images/blog-post1-200x300.jpg);
+    background-image: url(images/blog-post1-400x600.jpg);
     background-size: cover;
 }
 
 .vertical-image.right-bottom {
-    background-image: url(images/blog-post2-200x300.jpg);
+    background-image: url(images/blog-post2-400x600.jpg);
     background-size: cover;
 }
 
