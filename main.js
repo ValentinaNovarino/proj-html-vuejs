@@ -9,13 +9,11 @@ var app = new Vue (
                 'Latest News',
                 'Albums',
                 'Fans'
-            ]
-
+            ],
+            showMenu: false
         },
         methods: {
-            showMenu() {
 
-            }
         }
     }
 );
