@@ -311,9 +311,17 @@ button.secondary {
     background-position: center;
 }
 
+.horizontal-image.left-top:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog_music_techo-800x400.jpg);
+}
+
 .vertical-image.left {
     background-image: url(images/blog-post3-400x600.jpg);
     background-size: cover;
+}
+
+.vertical-image.left:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog-post3-400x600.jpg);
 }
 
 .vertical-image.right {
@@ -321,9 +329,17 @@ button.secondary {
     background-size: cover;
 }
 
+.vertical-image.right:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog-post4-400x600.jpg);
+}
+
 .horizontal-image.left-bottom {
     background-image: url(images/blog_flavor_rock-800x400.jpg);
     background-size: cover;
+}
+
+.horizontal-image.left-bottom:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog_flavor_rock-800x400.jpg);
 }
 
 .vertical-image.right-top {
@@ -331,9 +347,17 @@ button.secondary {
     background-size: cover;
 }
 
+.vertical-image.right-top:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog-post1-400x600.jpg);
+}
+
 .vertical-image.right-bottom {
     background-image: url(images/blog-post2-400x600.jpg);
     background-size: cover;
+}
+
+.vertical-image.right-bottom:hover {
+    background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog-post2-400x600.jpg);
 }
 
 .image-text p {
