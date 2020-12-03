@@ -85,6 +85,16 @@ header, .header-menu {
     font-size: 30px;
 }
 
+.show {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -250,6 +260,7 @@ button.secondary {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .horizontal-image:hover span {
@@ -278,6 +289,7 @@ button.secondary {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .vertical-image:hover span {
