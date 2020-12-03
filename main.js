@@ -2,6 +2,17 @@ var app = new Vue (
     {
         el: '#root',
         data: {
+            // logo HEADER
+            logoHeader: 'images/avada-music-logo.png',
+            // bottone primario
+            buttonPrimary: 'latest album',
+            // bottone secondario
+            buttonSecondary: 'live dates',
+            // primo link-button
+            firstLinkButton: 'view all latest news',
+            // secondo link-button
+            secondLinkButton: 'view all live dates',
+            // array delle voci di menu
             menuItems: [
                 'Home',
                 'Meet The Band',
@@ -10,7 +21,9 @@ var app = new Vue (
                 'Albums',
                 'Fans'
             ],
+            // chiave per vedere o nascondere il menu
             isVisible: true,
+            // array di oggetti dei lives
             lives: [
                 {
                     date: '17/08/2020',
@@ -37,9 +50,12 @@ var app = new Vue (
                     name: 'envision festival -',
                     place: 'uvita, costa rica'
                 }
-            ]
+            ],
+            // logo FOOTER
+            logoFooter: 'images/logo_footer.png'
         },
         methods: {
+            // funzione per aprire e chiudere il menu
             openCloseDropdownMenu() {
                 this.isVisible = !this.isVisible;
             }

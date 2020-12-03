@@ -12,10 +12,11 @@
     </head>
     <body>
         <div id="root">
+            <!-- container-home menu -->
             <div class="container-home" v-if="isVisible">
                 <header>
                     <div class="logo">
-                        <img src="images/avada-music-logo.png" alt="">
+                        <img :src="logoHeader" alt="">
                     </div>
                     <div class="hamburger-menu" @click="openCloseDropdownMenu()">
                         <i class="fas fa-bars"></i>
@@ -28,14 +29,14 @@
                     <p>
                         There is an untold story behind every   favorite song.
                     </p>
-                    <button class="primary text-uppercase" type="button" name="button">latest album</button>
-                    <button class="secondary text-uppercase" type="button" name="button">live dates</button>
+                    <button class="primary text-uppercase" type="button" name="button">{{ buttonPrimary }}</button>
+                    <button class="secondary text-uppercase" type="button" name="button">{{ buttonSecondary }}</button>
                 </div>
             </div>
             <div class="menu" v-else>
                 <div class="header-menu">
                     <div class="logo">
-                        <img src="images/avada-music-logo.png" alt="">
+                        <img :src="logoHeader" alt="">
                     </div>
                     <div class="close" @click="openCloseDropdownMenu()">
                         <i class="fas fa-times"></i>
@@ -47,11 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- fine-container-home menu -->
+            <!-- introduzione -->
             <div class="introduction">
                 <div class="container-small text-center">
-                    <div class="colored-row">
-
-                    </div>
+                    <div class="divider"></div>
                     <h2>Music is life</h2>
                     <div class="row">
                         <hr>
@@ -59,7 +60,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
+            <!-- fine introduzione -->
+            <!-- inizio main -->
             <main>
+                <!-- sezione blog -->
                 <div class="blog">
                     <div class="container-small text-center">
                         <h2>Latest Band News</h2>
@@ -141,9 +145,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- fine sezione blog -->
                 <a class="button-link text-uppercase">
-                    <span class="link" href="#">view all latest news</span>
+                    <span class="link" href="#">{{ firstLinkButton }}</span>
                 </a>
+                <!-- sezione citazioni -->
                 <div class="quotes">
                     <div class="container-small text-center">
                         <p class="text-quotes">"I just listened to it and said to myself, "Man, i really love this album." Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. they're good. And they're inventive. I haven't heard anything this year that's as inventive. I don't really exepct to." </p>
@@ -152,6 +158,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- fine sezione citazione -->
+                <!-- inizio sezione lives -->
                 <div class="lives text-center">
                     <div class="container-small">
                         <h2>Live Dates</h2>
@@ -161,7 +169,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="container text-left">
-                        <div class="live-dates" v-for="live in lives">
+                        <div class="live-dates col-xs-12" v-for="live in lives">
                             <a class="live" href="#">
                                 <span><i class="fas fa-plus"></i></span>
                                 <span class="text-uppercase">{{ live.date }} {{ live.name }} {{live.place}}</span>
@@ -169,14 +177,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- fine sezione lives -->
                 <a class="button-link text-uppercase">
-                    <span class="link" href="#">view all live dates</span>
+                    <span class="link" href="#">{{ secondLinkButton }}</span>
                 </a>
             </main>
+            <!-- fine main -->
+            <!-- inizio footer -->
             <footer>
                 <div class="footer-menu">
                     <div class="logo-footer">
-                        <img src="images/logo_footer.png" alt="">
+                        <img :src="logoFooter" alt="">
                     </div>
                     <div class="menu-footer">
                         <ul>
@@ -206,6 +217,7 @@
                     </div>
                 </div>
             </footer>
+            <!-- fine footer -->
         </div>
 
         <script src="main.js" charset="utf-8"></script>

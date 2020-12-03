@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
-/* font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif; */
+/****** GENERALI ******/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    line-height: 30px;
+}
 
 h2 {
     font-size: 60px;
@@ -21,10 +28,6 @@ h3 {
     color: #ea4a56;
     margin-top: 0;
     margin-bottom: 10px;
-}
-
-p {
-    font-family: 'Merriweather', serif;
 }
 
 .container-small {
@@ -79,20 +82,11 @@ header, .header-menu {
     justify-content: flex-end;
     align-items: center;
     color: #fefefe;
+    cursor: pointer;
 }
 
 .hamburger-menu i {
     font-size: 30px;
-}
-
-.show {
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-.fade {
-    opacity: 1;
-    transition: opacity 2s;
 }
 
 .menu {
@@ -103,6 +97,8 @@ header, .header-menu {
     background-color: #ea4a56;
     position: fixed;
     z-index: 10;
+    animation-name: menu;
+    animation-duration: 0.3s;
 }
 
 .close {
@@ -128,7 +124,6 @@ header, .header-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-size: 35px;
     color: #fefefe;
@@ -144,16 +139,11 @@ header, .header-menu {
     cursor: pointer;
 }
 
-.fade, {
-  transition: opacity 0.5s;
-}
-
 .untold-story {
     color: #fefefe;
 }
 
 .untold-story h1 {
-    font-family: 'Montserrat', sans-serif;
     margin-top: 70px;
     margin-bottom: 25px;
     font-size: 150px;
@@ -166,27 +156,26 @@ header, .header-menu {
     font-style: italic;
 }
 
-button.primary {
+button.primary, button.secondary {
     margin-right: 5px;
     padding: 17px 40px;
     font-size: 16px;
-    border: 1px solid #ea4a56;
     border-radius: 2px;
+}
+
+button.primary {
+    border: 1px solid #ea4a56;
     background-color: #ea4a56;
 }
 
 button.secondary {
-    margin-left: 5px;
-    padding: 17px 40px;
-    font-size: 16px;
     border: 1px solid #fefefe;
-    border-radius: 2px;
     color: #fefefe;
     background-color: transparent;
 }
 
 /****** INTRODUCTION ******/
-.colored-row {
+.divider {
     width: 400px;
     height: 15px;
     margin: auto;
@@ -212,7 +201,7 @@ button.secondary {
     margin-bottom: 50px;
 }
 
-/****** BLOG BOX ******/
+/****** blog-box ******/
 .box-left-top, .box-left-bottom {
     height: 280px;
 }
@@ -253,7 +242,6 @@ button.secondary {
     display: none;
     color: white;
     font-size: 20px;
-    font-size: bold;
 }
 
 .horizontal-image:hover {
@@ -282,7 +270,6 @@ button.secondary {
     display: none;
     color: white;
     font-size: 20px;
-    font-size: bold;
 }
 
 .vertical-image:hover {
@@ -303,18 +290,11 @@ button.secondary {
 }
 
 .box-left-top .image-text, .box-left-bottom .image-text {
-    /* height: 40%; */
     padding: 30px 25px 20px;
 }
 
 .box-left-center .image-text, .box-right-top .image-text, .box-right-bottom .image-text {
-    /* height: 30%; */
     padding: 30px 25px 20px;
-}
-
-.image-text p {
-    margin: 0;
-    line-height: 30px;
 }
 
 .horizontal-image.left-top {
@@ -372,12 +352,13 @@ button.secondary {
     background-image: linear-gradient(to right, rgba(236, 77, 88, 0.75), rgba(236, 77, 88, 0.75)), url(images/blog-post2-400x600.jpg);
 }
 
-.image-text p {
-    color: #737376;
-}
-
 .image-text {
     background-color: #323844;
+}
+
+.image-text p {
+    color: #737376;
+    margin: 0;
 }
 
 /****** LINK-BUTTON ******/
@@ -391,8 +372,6 @@ a.button-link {
     text-decoration: none;
     cursor: pointer;
 }
-
-
 
 span.link {
     font-size: 16px;
@@ -436,7 +415,6 @@ p.text-quotes {
 }
 
 .live-dates {
-    width: 100%;
     margin: 10px 0;
     padding: 15px 25px;
     background-color: #323844;
@@ -455,17 +433,11 @@ a.live {
 }
 
 /****** FOOTER ******/
+/****** footer-menu ******/
 .footer-menu {
     display: flex;
     background-color: #323844;
     padding: 70px 40px;
-}
-
-.footer-copyright {
-    display: flex;
-    align-items: center;
-    padding: 30px 40px;
-    background-color: #272b34;
 }
 
 .menu-footer {
@@ -489,6 +461,13 @@ a.live {
 .menu-footer a:hover {
     color: #fefefe;
 }
+/* footer-copyright */
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #272b34;
+}
 
 .footer-copyright p {
     margin: 0;
@@ -511,4 +490,11 @@ a.live {
 .social-icon a {
     padding: 10px;
     color: #737376;
+}
+
+/****** KEYFRAMES ******/
+/* animazione menu */
+@keyframes menu {
+  from {width: 0%; height: 0%;}
+  to {width: 100%; height: 100%;}
 }
