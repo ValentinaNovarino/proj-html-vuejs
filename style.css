@@ -16,9 +16,11 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     color: #ea4a56;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 p {
@@ -202,7 +204,7 @@ button.secondary {
 
 /****** BLOG BOX ******/
 .box-left-top, .box-left-bottom {
-    height: 300px;
+    height: 280px;
 }
 
 .box-left-top {
@@ -214,12 +216,12 @@ button.secondary {
 }
 
 .box-left-center.left, .box-left-center.right {
-    height: 600px;
+    height: 560px;
     margin: 15px 0;
 }
 
 .box-right-top, .box-right-bottom {
-    height: 615px;
+    height: 575px;
 }
 
 .box-right-top {
@@ -231,22 +233,76 @@ button.secondary {
 }
 
 .horizontal-image {
-    height: 60%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
 }
 
-.box-left-top .image-text, .box-left-bottom .image-text {
-    height: 40%;
-    padding: 10px;
+.horizontal-image span {
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.horizontal-image:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-image:hover span {
+    display: block;
+}
+
+.horizontal-image:hover .image-text {
+    display: none;
 }
 
 .vertical-image {
-    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.vertical-image span {
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.vertical-image:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-image:hover span {
+    display: block;
+    padding: 25px;
+    text-align: center;
+}
+
+.vertical-image:hover .image-text {
+    display: none;
+}
+
+.box-left-top .image-text, .box-left-bottom .image-text {
+    /* height: 40%; */
+    padding: 30px 25px 20px;
 }
 
 .box-left-center .image-text, .box-right-top .image-text, .box-right-bottom .image-text {
-    height: 30%;
-    padding: 10px;
+    /* height: 30%; */
+    padding: 30px 25px 20px;
+}
+
+.image-text p {
+    margin: 0;
+    line-height: 30px;
 }
 
 .horizontal-image.left-top {
